@@ -11,7 +11,8 @@
     padding-right: 20px;
     margin-top: -100px;
     z-index: 1;
-/*Titre*/
+
+    /*Titre*/
     .header_menu {
         display: flex;
         flex-direction: row;
@@ -28,9 +29,9 @@
         justify-content: flex-start;
         align-items: center;
 
-
     }
 }
+
 /* Insérer correctement l’image de fond pages restaurants */
 .fond1 {
     height: 400px;
@@ -61,8 +62,8 @@
     padding-left: 20px;
     padding-top: 35px;
 
-
 }
+
 /*Trait vert sous les sous-titres*/
 .souligne {
     font-size: 1.3em;
@@ -75,12 +76,12 @@
     display: flex;
     flex-direction: column;
 
-
     @media screen and (min-width:1024px) {
         flex-direction: row;
         column-gap: 15px;
     }
 }
+
 /*1 card*/
 .choix {
     display: flex;
@@ -103,7 +104,6 @@
         flex-direction: column;
         padding: 20px;
         width: 100%;
-
 
     }
 
@@ -163,6 +163,7 @@
 .restaurant_wrapper {
     padding-bottom: 80px;
 }
+
 /*Apparition de la coche*/
 @keyframes slide {
     0% {

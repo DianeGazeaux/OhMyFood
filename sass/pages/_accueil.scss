@@ -1,4 +1,4 @@
-/*chargement page*/ 
+/*chargement page*/
 .load {
     background-color: white;
     opacity: 0.9;
@@ -14,7 +14,8 @@
 main {
     background-color: lighten($color: grey, $amount: 47%);
 }
-/*l’ensemble des cards*/ 
+
+/*l’ensemble des cards*/
 .restaurants {
     background-color: lighten($color: grey, $amount: 43%);
     padding: 0 20px 20px 20px;
@@ -23,7 +24,6 @@ main {
     row-gap: 20px;
     width: auto;
     height: auto;
-
 
     h3 {
         font-family: "roboto";
@@ -54,7 +54,7 @@ main {
     }
 }
 
-/*cards séparement*/ 
+/*cards séparement*/
 .card_restaurant {
     display: flex;
     flex-direction: column;

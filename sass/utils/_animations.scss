@@ -4,9 +4,7 @@
 
 }
 
-
 .like {
-
     &:hover>.like_empty {
         animation: like_empty .5s ease-in-out both;
 
@@ -25,9 +23,9 @@
 .check {
     i {
         animation: spin 1s ease;
-
     }
 }
+
 /*Chargement de chaque page restaurant*/
 .choix {
     animation: appear 0.8s ease-in-out both;
@@ -50,8 +48,6 @@
 
     &:hover .check {
         animation: slide 0.3s both;
-
-
     }
 
     &:hover .choix_container {

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*couleurs utilisées. Nom utilisé conforme à la chartre graphique pour rendre les futurs changements fluides */ /*Chargement de la page*/
+/*couleurs utilisées. Noms utilisés conforme à la chartre graphique pour rendre les futurs changements fluides */ /*Chargement de la page*/
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&family=Shrikhand:wght@100;200;300;400;500;600;700&display=swap);
 .load {
   animation: fondu 1s 2s forwards;

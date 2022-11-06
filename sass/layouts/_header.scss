@@ -1,0 +1,78 @@
+/*placement du logo*/
+.header {
+    padding: 16px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    &__logo {
+        flex: 15;
+        margin-left: -20px;
+        cursor: pointer;
+    }
+}
+/*le logo à proprement parlé*/
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+
+    a {
+        /*La taille occupée dans l’espace disponible*/
+        flex: 1;
+        /* position sur l'axe Z dans un espace 3D*/
+        z-index: 1;
+        font-size: 1.5em;
+    }
+}
+
+/*Paris, Belleville*/
+.lieu {
+    /*l’effet d’ombre portée à l’intérieur de la balise, comme si le contenu était enfoncé dans la boîte*/ 
+
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 2px 0px inset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    h5 {
+        display: inline-flex;
+        flex-direction: row;
+        /*force le titre (enfant) à rester dans le .lieu (sélecteur parent)*/ 
+        box-sizing: border-box;
+        height: 100%;
+        padding-left: 15px;
+        color: black;
+        opacity: 0.7;
+    }
+}
+/*section sur la présentation de la société*/ 
+.presentation {
+    padding: 40px 40px 60px 40px;
+    background-color: lighten($color: grey, $amount: 47%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    h3 {
+        text-align: center;
+        font-family: "roboto";
+        font-size: 1.5em;
+        padding: 0 30px 0 30px;
+    }
+
+    p {
+
+        text-align: center;
+        color: black;
+        opacity: 0.7;
+        font-size: 1.1em;
+
+    }
+}

@@ -1,0 +1,12 @@
+/*L’ensemble : Fonctionnement + 1., 2., 3.*/ 
+.etapes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 35px 30px 35px;
+
+    h3 {
+        font-size: 1.5em;
+        font-family: "roboto"
+    }
+}

@@ -1,0 +1,57 @@
+/*bouton Explorer nos restaurants - Index*/
+.explorer {
+    /*mixins sont appelés avec @ + le nom choisi dans le sélecteur concerné*/
+    @include boutons;
+    margin: auto;
+    width: 70%;
+/*Esperluette : appliquer le pseudo-élement enfant à la class parent .explorer*/
+    &:hover {
+        transform: scale(1.01);
+        opacity: 0.9;
+    }
+}
+
+/*bouton Commander sur chaque html des restaurants*/
+.commander {
+    @include boutons;
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+
+    &:hover {
+        transform: scale(1.01);
+        opacity: 0.9;
+    }
+}
+/*l'ensemble des icones coeur du projet*/
+.like {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    /*ordre d’apparition des couches successives (ce qui doit s’afficher en 1er sur la page puis 2, 3....)*/
+    z-index: 2;
+
+
+    &_full {
+        position: absolute;
+        display: none;
+        opacity: 0;
+
+        i {
+            color: transparent;
+            background-image: $degrade;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline;
+        }
+    }
+
+    &_empty {
+        position: absolute;
+    }
+}

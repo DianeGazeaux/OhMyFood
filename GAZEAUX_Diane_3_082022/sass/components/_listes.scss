@@ -1,0 +1,67 @@
+/*section mais pour 1., 2., 3.*/
+.etapes ol {
+    counter-reset: etape;
+    padding: 0px;
+}
+
+
+.etapes li {
+    list-style-type: none;
+    counter-increment: etape;
+
+}
+
+.etapes li:before {
+    content: counter(etape);
+    background: $primaire;
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: -12px;
+}
+
+
+/*nom de liste 1. ou 2. ou 3.*/
+.etape {
+    padding: 24px;
+    margin: 16px 10px 16px 12px;
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 13%);
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    
+
+    &:hover {
+        background-color: lighten($color: $primaire, $amount: 35%);
+
+        i {
+            color: $primaire;
+        }
+    }
+
+    i {
+        /*espacement entre l'icône et le texte à sa droite*/
+        margin-right: 20px;
+
+    }
+
+}
+/*Donner une contrainte*/
+.choix_wrapper ol {
+    display: flex;
+    flex-direction: column;
+/*Adapter cette contrainte à l'affiche sur PC*/
+    @media screen and (min-width:1024px) {
+        flex-direction: row;
+        width: 100%;
+    }
+}

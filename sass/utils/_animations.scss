@@ -1,0 +1,145 @@
+/*Chargement de la page*/
+.load {
+    animation: fondu 1s 2s forwards;
+
+}
+
+
+.like {
+
+    &:hover>.like_empty {
+        animation: like_empty .5s ease-in-out both;
+
+    }
+
+    &:hover>.like_full {
+        animation: like_full .5s ease-in-out both;
+        animation-delay: .5s;
+        display: inline;
+
+    }
+
+}
+
+/*Rotation coche*/
+.check {
+    i {
+        animation: spin 1s ease;
+
+    }
+}
+/*Chargement de chaque page restaurant*/
+.choix {
+    animation: appear 0.8s ease-in-out both;
+
+    &:nth-child(1) {
+        animation-delay: 0ms;
+    }
+
+    &:nth-child(2) {
+        animation-delay: 200ms;
+    }
+
+    &:nth-child(3) {
+        animation-delay: 400ms;
+    }
+
+    &:nth-child(4) {
+        animation-delay: 600ms;
+    }
+
+    &:hover .check {
+        animation: slide 0.3s both;
+
+
+    }
+
+    &:hover .choix_container {
+        animation: slide_container 0.3s both;
+    }
+}
+
+/*Loader page d'accueil*/
+@keyframes spin {
+    0% {
+        transform: rotate(-270deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/*Loader page d'accueil*/
+@keyframes fondu {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+/*Apparition coche*/
+@keyframes slide {
+    0% {
+        display: grid;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+}
+
+/*Apparition coche*/
+@keyframes slide_container {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: calc(100% - 80px);
+    }
+}
+
+/*Loader page restaurant*/
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+/*Remplissage coeur*/
+@keyframes like_empty {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes like_full {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

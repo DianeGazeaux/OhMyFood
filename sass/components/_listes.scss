@@ -4,7 +4,6 @@
     padding: 0px;
 }
 
-
 .etapes li {
     list-style-type: none;
     counter-increment: etape;
@@ -25,7 +24,6 @@
     left: -12px;
 }
 
-
 /*nom de liste 1. ou 2. ou 3.*/
 .etape {
     padding: 24px;
@@ -38,7 +36,6 @@
     position: relative;
     width: 100%;
     cursor: pointer;
-    
 
     &:hover {
         background-color: lighten($color: $primaire, $amount: 35%);
@@ -55,11 +52,13 @@
     }
 
 }
+
 /*Donner une contrainte*/
 .choix_wrapper ol {
     display: flex;
     flex-direction: column;
-/*Adapter cette contrainte à l'affiche sur PC*/
+
+    /*Adapter cette contrainte à l'affiche sur PC*/
     @media screen and (min-width:1024px) {
         flex-direction: row;
         width: 100%;

@@ -4,7 +4,8 @@
     @include boutons;
     margin: auto;
     width: 70%;
-/*Esperluette : appliquer le pseudo-élement enfant à la class parent .explorer*/
+
+    /*Esperluette : appliquer le pseudo-élement enfant à la class parent .explorer*/
     &:hover {
         transform: scale(1.01);
         opacity: 0.9;
@@ -24,6 +25,7 @@
         opacity: 0.9;
     }
 }
+
 /*l'ensemble des icones coeur du projet*/
 .like {
     display: flex;
@@ -34,7 +36,6 @@
     position: relative;
     /*ordre d’apparition des couches successives (ce qui doit s’afficher en 1er sur la page puis 2, 3....)*/
     z-index: 2;
-
 
     &_full {
         position: absolute;
